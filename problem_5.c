@@ -1,21 +1,18 @@
 //write a c program to check prime numbers.
 
-#include <stdio.h>
-#include <stdbool.h>  // For using the boolean type
+#include <stdio.h>  
 
 // Function to check if a number is prime
-bool isPrime(int num) {
-    if (num <= 1) {
-        return false;  // Numbers less than or equal to 1 are not prime
+int isPrime(int num) {
+    if (num <= 1) {  // Numbers less than or equal to 1 are not prime
+        return 0;
     }
-
-    // Check divisibility from 2 to sqrt(num)
-    for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) {
-            return false;  // num is divisible by i, so it's not prime
+    for (int i = 2; i * i <= num; i++) {  // Check divisibility from 2 to sqrt(num)
+        if (num % i == 0) {  // If num is divisible by any number, it's not prime
+            return 0;
         }
     }
-    return true;  // num is prime
+    return 1;  // Return 1 if num is prime
 }
 
 int main() {
@@ -34,4 +31,3 @@ int main() {
 
     return 0;
 }
-

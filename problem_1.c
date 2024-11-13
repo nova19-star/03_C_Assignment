@@ -1,16 +1,14 @@
-//Write a c program to swap two numbers.
+// Write a c program to swap two numbers.
 
 #include <stdio.h>  
 
 int main()  
 {
     int a, b;  // Declare two integer variables a and b
-
     
     printf("Enter the value of a: ");  // Display the user to enter the value for a
     scanf("%d", &a);  // Read the value of a from the user
 
-    
     printf("Enter the value of b: ");  // Display the user to enter the value for b
     scanf("%d", &b);  // Read the value of b from the user
 
