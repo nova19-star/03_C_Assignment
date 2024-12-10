@@ -2,24 +2,21 @@
 
 #include <stdio.h>  
 
-int main()  
+int main()
 {
-    int a, b, temp;  // Declare three integer variables: a, b, and temp (for swapping)
+    int a, b, temp;  
     
-    printf("Enter the value of a: ");  // Prompt the user to enter the value for a
-    scanf("%d", &a);  // Read the value of a from the user
+    printf("Enter the value of a: ");  
+    scanf("%d", &a);  
 
-    
-    printf("Enter the value of b: ");  // Prompt the user to enter the value for b
-    scanf("%d", &b);  // Read the value of b from the user
+    printf("Enter the value of b: ");  
+    scanf("%d", &b);  
 
-    // Swapping the values of a and b using a temporary variable temp
-    temp = a;  // Store the value of a in temp
-    a = b;  // Assign the value of b to a
-    b = temp;  // Assign the value of temp (original a) to b
+    temp = a;  
+    a = b;  
+    b = temp;  
 
-    // Print the swapped values of a and b
-    printf("After swapping, a = %d, b = %d\n", a, b);  // Display the swapped values
+    printf("After swapping, a = %d, b = %d\n", a, b);  
 
     return 0; 
 }
